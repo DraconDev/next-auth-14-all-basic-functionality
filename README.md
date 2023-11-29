@@ -43,7 +43,7 @@ Example
 ```bash
 GITHUB_ID=""
 GITHUB_SECRET=""
-NEXTAUTH_SECRET="v"
+NEXTAUTH_SECRET=""
 
 ```
 
