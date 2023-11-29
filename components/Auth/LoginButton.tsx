@@ -5,16 +5,19 @@ export default function LoginButton() {
     if (session) {
         return (
             <>
-                Signed in as {session?.user?.email} <br />
-                <button onClick={() => signOut()}>Sign out</button>
+                <button
+                    onClick={() => signOut()}
+                    className="bg-secondary p-3 text-white "
+                >
+                    Sign out
+                </button>
             </>
         );
     }
     return (
         <>
-            Not signed in <br />
             <button
-                className="bg-blue-500"
+                className="bg-secondary p-3 text-white "
                 onClick={() => signIn()}
             >
                 Sign in
