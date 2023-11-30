@@ -1,7 +1,7 @@
 "use client";
 import { signIn, signOut, useSession } from "next-auth/react";
-import { TbUserHexagon } from "react-icons/tb";
 import { FaUserAltSlash } from "react-icons/fa";
+import { TbUserHexagon } from "react-icons/tb";
 
 export default function LoginLogo() {
     const { data: session } = useSession();
@@ -9,9 +9,9 @@ export default function LoginLogo() {
         <>
             <button
                 onClick={() => (session ? signOut() : signIn())}
-                className="bg-secondary hover:bg-accent text-white p-3 rounded-lg shadow-lg text-xl w-[110px]"
+                className="bg-secondary hover:bg-accent text-white p-3 rounded-lg shadow-lg text-xl "
             >
-                {session ? <FaUserAltSlash /> : <TbUserHexagon />}
+                {session ? <TbUserHexagon /> : <FaUserAltSlash />}
             </button>
         </>
     );
