@@ -1,5 +1,5 @@
+import CustomButton from "@/components/CustomButton";
 import { getServerSession } from "next-auth/next";
-import { useRouter } from "next/navigation";
 
 export default async function CheckIfLogged() {
     const session = await getServerSession();
@@ -9,6 +9,7 @@ export default async function CheckIfLogged() {
             hello
             {session ? "logged" : "not logged"}
             {JSON.stringify(session)}
+            <CustomButton page="/"/>
         </div>
     );
 }
