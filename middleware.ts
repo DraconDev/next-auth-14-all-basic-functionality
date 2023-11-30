@@ -1,5 +1,5 @@
 export { default } from "next-auth/middleware";
 
 export const config = {
-    matcher: ["/api/auth/:path*", "/showLoginIfNotLogged"],
+    matcher: ["/api/auth/:path*", "/protectedPage"],
 };
