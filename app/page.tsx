@@ -15,7 +15,7 @@ export default async function Home() {
                 show login info
             </Link>
             <Link
-                href="/showLoginIfNotLogged"
+                href="/protectedPage"
                 className="text-3xl p-3 rounded bg-secondary"
             >
                 page: show login if not logged
