@@ -6,7 +6,7 @@ export default function LoginButton() {
         <>
             <button
                 onClick={() => (session ? signOut() : signIn())}
-                className="bg-secondary p-3 text-white "
+                className="bg-secondary hover:bg-accent text-white p-3 rounded-lg shadow-lg text-xl w-[110px]"
             >
                 {session ? "Sign out" : "Sign in"}
             </button>
