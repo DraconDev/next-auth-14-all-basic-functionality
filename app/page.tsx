@@ -12,13 +12,13 @@ export default async function Home() {
                 href="/checkIfLogged"
                 className="text-3xl p-3 rounded bg-secondary"
             >
-                checkIfLogged
+                show login info
             </Link>
             <Link
                 href="/showLoginIfNotLogged"
                 className="text-3xl p-3 rounded bg-secondary"
             >
-                showLoginIfNotLogged
+                page: show login if not logged
             </Link>
             <div className="text-3xl w-full border-b-2 border-red-700 border border-0 flex justify-center">
                 Test Components
