@@ -47,6 +47,11 @@ NEXTAUTH_SECRET=""
 
 ```
 
+## Included providers
+
+(https://next-auth.js.org/providers/github)
+(https://next-auth.js.org/providers/google)
+
 ## Optional
 
 Use middleware in root
